@@ -34,27 +34,27 @@ android {
 //        }
     }
 
-//    // Specifies one flavor dimension.
-//    flavorDimensions += "version"
-//    productFlavors {
-//        create("demo") {
-//            // Assigns this product flavor to the "version" flavor dimension.
-//            // If you are using only one dimension, this property is optional,
-//            // and the plugin automatically assigns all the module's flavors to
-//            // that dimension.
-//            dimension = "version"
-//            applicationIdSuffix = ".demo"
-//            versionNameSuffix = "-demo"
-//            // You can also use a different appid:
-////            applicationId = "com.example.myapp.flavor1"
-////            versionName =  "1.0-flavor1"
-//        }
-//        create("full") {
-//            dimension = "version"
-//            applicationIdSuffix = ".full"
-//            versionNameSuffix = "-full"
-//        }
-//    }
+    // Specifies one flavor dimension.
+    flavorDimensions += "version"
+    productFlavors {
+        create("demo") {
+            // Assigns this product flavor to the "version" flavor dimension.
+            // If you are using only one dimension, this property is optional,
+            // and the plugin automatically assigns all the module's flavors to
+            // that dimension.
+            dimension = "version"
+            applicationIdSuffix = ".demo"
+            versionNameSuffix = "-demo"
+            // You can also use a different appid:
+//            applicationId = "com.example.myapp.flavor1"
+//            versionName =  "1.0-flavor1"
+        }
+        create("full") {
+            dimension = "version"
+            applicationIdSuffix = ".full"
+            versionNameSuffix = "-full"
+        }
+    }
 
 
     compileOptions {
